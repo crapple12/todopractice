@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #b3bfb8;
+}
+
+.todo-app {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.projects {
+    background-color: #f4f5f7;
+    height: 400px;
+    padding: 20px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.projects > * {
+    margin-bottom: 10px;
+}
+
+.project-content {
+    background-color: #ffffff;
+    height: 400px;
+    padding: 20px;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-content > * {
+    margin-bottom: 10px;
+}
+
+.project-task {
+    background-color:#d3d3d3;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* #new-project-btn {
+    
+} */
+
+#new-task-btn {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-indent: 1em;
+}
+
+#task-form {
+    background-color: burlywood;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 83%;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+}
+.confirm-new-task {
+    display: flex;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#new-task-btn, #exit-task-form:hover {
+    cursor: pointer;
+}
